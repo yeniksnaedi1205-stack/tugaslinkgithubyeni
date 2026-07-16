@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | Universitas Bhakti Nusantara</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background:#f4f7f6;
+            color:#333;
+            line-height:1.6;
+        }
+
+        header{
+            background:#003366;
+            color:white;
+            padding:20px 5%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo h1{
+            color:white;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#fca311;
+        }
+
+        main{
+            width:90%;
+            max-width:1100px;
+            margin:40px auto;
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:30px;
+        }
+
+        section{
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,.1);
+        }
+
+        h2{
+            color:#003366;
+            margin-bottom:20px;
+        }
+
+        p{
+            margin-bottom:15px;
+        }
+
+        label{
+            display:block;
+            margin-top:15px;
+            margin-bottom:5px;
+            font-weight:bold;
+        }
+
+        input,
+        textarea{
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            font-size:16px;
+        }
+
+        textarea{
+            resize:vertical;
+        }
+
+        button{
+            margin-top:20px;
+            background:#003366;
+            color:white;
+            border:none;
+            padding:12px 25px;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        button:hover{
+            background:#00509e;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+        @media(max-width:768px){
+
+            header{
+                flex-direction:column;
+            }
+
+            nav ul{
+                flex-direction:column;
+                margin-top:15px;
+                text-align:center;
+            }
+
+            main{
+                grid-template-columns:1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>Universitas Bhakti Nusantara</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="prodi.html">Program Studi</a></li>
+            <li><a href="fasilitas.html">Fasilitas</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+<section>
+
+<h2>Informasi Kontak</h2>
+
+<p><strong>Alamat</strong><br>
+Savana Picung Residence Rt 005/004 Kecamatan Pasarkemis Kabupaten Tangerang
+</p>
+
+<p><strong>Telepon</strong><br>
+085776221573
+</p>
+
+<p><strong>Email</strong><br>
+universitasbhaktinusantara@gmail.com
+</p>
+
+<p><strong>Jam Operasional</strong><br>
+Senin – Sabtu<br>
+08.00 – 17.00 WIB
+</p>
+
+</section>
+
+<section>
+
+<h2>Form Kontak</h2>
+
+<form>
+
+<label for="nama">Nama Lengkap</label>
+<input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda">
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="Masukkan email Anda">
+
+<label for="subjek">Subjek</label>
+<input type="text" id="subjek" name="subjek" placeholder="Masukkan subjek">
+
+<label for="pesan">Pesan</label>
+<textarea id="pesan" name="pesan" rows="6" placeholder="Tulis pesan Anda"></textarea>
+
+<button type="submit">Kirim Pesan</button>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>&copy; 2026 Universitas Bhakti Nusantara. Hak Cipta Dilindungi.</p>
+
+</footer>
+
+</body>
+</html>

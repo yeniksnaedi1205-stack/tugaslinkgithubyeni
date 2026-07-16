@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasilitas | Universitas Bhakti Nusantara</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background:#f4f7f6;
+            color:#333;
+        }
+
+        a{
+            text-decoration:none;
+        }
+
+        /* Header */
+        header{
+            background:#003366;
+            color:white;
+            padding:15px 5%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo h1{
+            font-size:1.8rem;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
+        }
+
+        nav ul li a{
+            color:white;
+        }
+
+        nav ul li a:hover{
+            color:#fca311;
+        }
+
+        /* Banner */
+        .banner{
+            background:linear-gradient(rgba(0,51,102,0.8),rgba(0,51,102,0.8)),
+            url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1');
+            background-size:cover;
+            background-position:center;
+            color:white;
+            text-align:center;
+            padding:100px 20px;
+        }
+
+        .banner h2{
+            font-size:3rem;
+            margin-bottom:10px;
+        }
+
+        .banner p{
+            font-size:1.2rem;
+        }
+
+        /* Fasilitas */
+        .fasilitas{
+            padding:50px 5%;
+        }
+
+        .judul{
+            text-align:center;
+            margin-bottom:40px;
+        }
+
+        .judul h2{
+            color:#003366;
+            font-size:2rem;
+        }
+
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 4px 8px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+
+        .card-content{
+            padding:20px;
+        }
+
+        .card-content h3{
+            color:#003366;
+            margin-bottom:10px;
+        }
+
+        .card-content p{
+            color:#666;
+        }
+
+        /* Footer */
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+        @media(max-width:768px){
+            header{
+                flex-direction:column;
+            }
+
+            nav ul{
+                flex-direction:column;
+                margin-top:10px;
+            }
+
+            .banner h2{
+                font-size:2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Universitas Bhakti Nusantara</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="prodi.html">Program Studi</a></li>
+                <li><a href="fasilitas.html">Fasilitas</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Fasilitas Kampus</h2>
+        <p>Fasilitas modern untuk mendukung proses belajar dan pengembangan mahasiswa.</p>
+    </section>
+
+    <section class="fasilitas">
+        <div class="judul">
+            <h2>Fasilitas Unggulan</h2>
+        </div>
+
+        <div class="grid">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da" alt="Perpustakaan">
+                <div class="card-content">
+                    <h3>Perpustakaan Digital</h3>
+                    <p>Dilengkapi ribuan koleksi buku, jurnal nasional dan internasional yang dapat diakses secara online.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="Laboratorium">
+                <div class="card-content">
+                    <h3>Laboratorium Komputer</h3>
+                    <p>Laboratorium dengan perangkat modern untuk mendukung pembelajaran teknologi dan penelitian.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b" alt="Lapangan">
+                <div class="card-content">
+                    <h3>Sarana Olahraga</h3>
+                    <p>Tersedia lapangan futsal, basket, voli, dan area olahraga lainnya untuk mahasiswa.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="WiFi">
+                <div class="card-content">
+                    <h3>WiFi Kampus</h3>
+                    <p>Akses internet cepat dan stabil yang tersedia di seluruh area kampus.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72" alt="Ruang Diskusi">
+                <div class="card-content">
+                    <h3>Ruang Diskusi</h3>
+                    <p>Tempat yang nyaman untuk belajar kelompok, seminar, dan kegiatan organisasi mahasiswa.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4" alt="Kantin">
+                <div class="card-content">
+                    <h3>Kantin Mahasiswa</h3>
+                    <p>Menyediakan berbagai pilihan makanan dan minuman dengan harga terjangkau.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Universitas Bhakti Nusantara. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
